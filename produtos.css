@@ -1,9 +1,23 @@
-*{
-    margin: 0;
-}
-
 header{
     background: #BBBBBB;
+    padding: 20px 0; /*para aumentar um pouco o cabeçalho*/
+}
+
+.caixa{
+    position: relative; /*para a caixa "levantar"em relacao ao nav*/
+    width: 940px; /*largura padrao q se usa na web*/
+    margin: 0 auto; /*para centralizar a caixa*/
+}
+
+nav{
+    position: absolute; /*para mudar a posicao inicial do nav no navegador*/
+    /*O menu(absolute em relação à caixa) estah agora colado na caixa(relative)*/
+
+    /*se o nav estah dentro da caixa, precisamos que a caixa levante, ou seja,
+    precisamos alterar a posicao da caixa para relative*/
+
+    top: 110px; /*A imagem tem 240px de altura*/
+    right: 0;
 }
 nav li{
     display: inline;
